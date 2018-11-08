@@ -1,12 +1,13 @@
 Követelmény specifikáció
 
-Project neve: „KRESZ Teszt”
+Project neve: „Quiz játék”
 
   Készítők: 
     •	Bánka Milán
     •	Slézia Péter
     •	Tóth Kristóf
     •	Tóth Richárd
+    • Szabó Patrik
 
 
   Jelenlegi helyzet:
@@ -17,12 +18,11 @@ Project neve: „KRESZ Teszt”
     A megrendelő több hasonló játékot látott és szeretne egy sajátot, amiben több és érdekesebb kérdések vannak.
     
   Követelmények, szabályok:
-    •	A vizsga kitöltésére maximum 55 perc áll rendelkezésre, amely hamarabb is befejezhető.
-    •	A vizsga 55 kérdésből áll, 10 db. 3 pontos és 45 db 1 pontos kérdés.
-    •	A maximális pontszám 75, a sikeres vizsgához 65 pontra van szükség.
-    •	Minden kérdésben csak 1db válasz lehet jó.
-    •	A rendelkezésre álló 55 perc alatt bármikor módosítható bármelyik kérdésre adott válasz.
-    •	Felhasználói fiók létrehozása, amelyben a már kitöltött tesztek eredményei tárolódnak.
+    A játékos kérdéseket kap, amikre válaszolnia kell egy megadott idő alatt.
+    Minde kérdésre 4 lehetőség közül kell kiválasztania a helyeset.
+    A felhasználó választhat egy előre megadott kategóriákból választhat vagy hozzáadhat újat,
+    beállíthat nehézségi szintet is pl.közepes:20 kérdés.
+    
 
   Igényelt üzleti folyamatok modellje:
   
