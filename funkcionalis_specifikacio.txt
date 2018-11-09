@@ -1,10 +1,6 @@
 Funkcionális specifikáció
 
- Vágyálom rendszer:
  
-   Egy könnyen kezelhető választós játék, amit kortól függetlenül bárki használhat. 
-   Fő motívuma a szórakozás és az időtöltés. 
-   Létrehozni egy olyan ingyenes játékot, amit bárki elérhet és bármikor használhat.
 
  A rendszer funkciói:
  
