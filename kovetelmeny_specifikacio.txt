@@ -17,6 +17,12 @@ Project neve: „Quiz játék”
     A program egy cross-platform (Android klienssel és böngészőben is elérhető) felelet választós játék.
     A megrendelő több hasonló játékot látott és szeretne egy sajátot, amiben több és érdekesebb kérdések vannak.
     
+   Vágyálom rendszer:
+ 
+    Egy könnyen kezelhető választós játék, amit kortól függetlenül bárki használhat. 
+    Fő motívuma a szórakozás és az időtöltés. 
+    Létrehozni egy olyan ingyenes játékot, amit bárki elérhet és bármikor használhat.
+    
   Követelmények, szabályok:
     A játékos kérdéseket kap, amikre válaszolnia kell egy megadott idő alatt.
     Minde kérdésre 4 lehetőség közül kell kiválasztania a helyeset.
@@ -26,9 +32,9 @@ Project neve: „Quiz játék”
 
   Igényelt üzleti folyamatok modellje:
   
-    A megrendelővel egyeztetések és kölönböző ötletek felvázolása után az elképzelés a következő:
-      Egy modern, naprakész, könnyen használható és egyben megbízható applikáció megfelelő háttérrel és 
-      ehhez tartozó webbel.Az applikáció kizárólag android-ra készül.
+     A megrendelővel egyeztetések és kölönböző ötletek felvázolása után az elképzelés a következő:
+     Egy modern, naprakész, könnyen használható és egyben megbízható applikáció megfelelő háttérrel és 
+     ehhez tartozó webbel.Az applikáció kizárólag android-ra készül.
       
    Követelménylista:
     Kortól függetlenül bárkinek
