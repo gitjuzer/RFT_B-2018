@@ -1,10 +1,18 @@
 Funkcionális specifikáció
 
+
+Jelenlegi helyzet leírása:
+ 
+ A követelmény specifikációban meghatározott követelmények és specifikációk alapján elkészült a terv.
+ Meglett fogalmazva a vágyálom rendszer és dokumentáltuk milyen redszer verziókat kell támogatnunk. A következőkben
+ összefoglaljuk a rendszer funkcióit (szerver/kliens oldal), valamint dokumentáljuk a használati eseteket és a
+ követelménylistát is megfogalmazzuk.
+
  
  A rendszer funkciói:
  
   Szerveroldal:
-  
+ 
   - Funkció a db-hez való csatlakozáshoz
   - Funkció a felhasználói szint megkülönbeztetésére(igény szerint)
   - Egy függvény az eddig kitöltött tesztek eredmények átlagának kiszámítására és ábrázolására
