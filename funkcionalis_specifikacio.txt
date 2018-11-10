@@ -1,25 +1,27 @@
 Funkcionális specifikáció
 
  
-
  A rendszer funkciói:
  
   Szerveroldal:
-  -Funkció a db-hez való csatlakozáshoz
-  -Funkció a felhasználói szint megkülönbeztetésére(igény szerint)
-  -Egy függvény az eddig kitöltött tesztek eredmények átlagának kiszámítására és ábrázolására
+  
+  - Funkció a db-hez való csatlakozáshoz
+  - Funkció a felhasználói szint megkülönbeztetésére(igény szerint)
+  - Egy függvény az eddig kitöltött tesztek eredmények átlagának kiszámítására és ábrázolására
   
   Kliensoldal:
-  -Egy form a választási lehetőségek megjelenítésére
-  -Next gomb funkcióval ellátva a következő kérdésre ugrás végett
-  -A teszt végén egy statisztika a választások alapján
-  -Új teszt kötöltése gomb funkcióval ellátva
+  
+  - Egy form a választási lehetőségek megjelenítésére
+  - Next gomb funkcióval ellátva a következő kérdésre ugrás végett
+  - A teszt végén egy statisztika a választások alapján
+  - Új teszt kötöltése gomb funkcióval ellátva
  
  
- Használati esetek
-  -A rendszer fejlesztés közben figyelembe véve a megrendelő által megszabott platformok támogatását, 
-   a szoftvernek támogatnia kell a legújabb verziójú Android rendszert
-  -A fejlesztőket nem terheli a felsoroltakon kívüli rendszereken való futtatás optimalizálása. 
+ Használati esetek:
+ 
+  - A rendszer fejlesztés közben figyelembe véve a megrendelő által megszabott platformok támogatását, 
+    a szoftvernek támogatnia kell a legújabb verziójú Android rendszert
+  - A fejlesztőket nem terheli a felsoroltakon kívüli rendszereken való futtatás optimalizálása. 
   
 Követelmény lista:
 
