@@ -20,6 +20,18 @@ Funkcionális specifikáció
   -A rendszer fejlesztés közben figyelembe véve a megrendelő által megszabott platformok támogatását, 
    a szoftvernek támogatnia kell a legújabb verziójú Android rendszert
   -A fejlesztőket nem terheli a felsoroltakon kívüli rendszereken való futtatás optimalizálása. 
+  
+Követelmény lista:
+
+ - Kortól függetlenül bárki játszhat vele
+ - Átlátható rendszer -> könnyű navigálás
+ - Menürendszer
+ - Időkorlát beállítási lehetőség
+ - Kérdések számának meghatározása
+ - Modern design -> Material Design
+ - Testreszabhatóság
+ - Minimális erőforrás igényre való törekvés
+ - Hiba mentes futtatás
 
 Felhasznált kész komponensek:
   -
