@@ -46,3 +46,16 @@ Követelmény lista:
 Felhasznált kész komponensek:
   -
   -
+  
+ Fogalomszótár:
+  - New Game -új játék indítása
+  - score - a játékban gyűjtött pontok 
+  - healt pont - élet száma a játékban
+  - description - leírás
+  - main menü - főmenü
+  - exit - kilépés a játékból
+  - pause - pillanat megállítás
+  - back - vissza
+  - bug - hiba
+  - platform - szoftverkörnyezet
+
