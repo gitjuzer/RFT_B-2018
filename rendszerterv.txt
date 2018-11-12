@@ -11,3 +11,8 @@ Bevezetés:
     • Szabó Patrik
     
   közös projectje keretein belül létrejövő szoftvert specifikálja.
+
+A rendszer célja:
+
+  A szoftver azon embereket célozza meg, akik szeretnek játszani és hajlandóak ezzel eltölteni a szabad idejüket is. 
+  A játék egy kellemes kikapcsolódást nyújt elvonja a figyelmet a mindennapi dolgokról ezzel segítve a stressz levezetését.
