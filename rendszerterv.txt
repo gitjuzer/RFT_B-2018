@@ -1,1 +1,13 @@
 Rendszerterv
+
+Bevezetés:
+
+  Ez a dokumentum,
+  
+    •	Bánka Milán
+    •	Slézia Péter
+    •	Tóth Kristóf
+    •	Tóth Richárd
+    • Szabó Patrik
+    
+  közös projectje keretein belül létrejövő szoftvert specifikálja.
