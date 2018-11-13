@@ -18,8 +18,15 @@ A rendszer célja:
   A játék egy kellemes kikapcsolódást nyújt elvonja a figyelmet a mindennapi dolgokról ezzel segítve a stressz levezetését.
   
   
- Nem funkcionális követelmények:
+Nem funkcionális követelmények:
 
   Egyszerű, minimalista Material Design téma/design
   Akadálymentes felület biztosítása
   Különböző telefon méretek felbontásának támogatása
+
+Támogatott eszközök:
+
+  A szoftver a következő Android verziókat fogja támogatni:
+    
+    - Android 4.4 (API 19) verziótól
+    - Android 9.0 (API 28) verzióig
