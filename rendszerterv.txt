@@ -16,3 +16,10 @@ A rendszer célja:
 
   A szoftver azon embereket célozza meg, akik szeretnek játszani és hajlandóak ezzel eltölteni a szabad idejüket is. 
   A játék egy kellemes kikapcsolódást nyújt elvonja a figyelmet a mindennapi dolgokról ezzel segítve a stressz levezetését.
+  
+  
+ Nem funkcionális követelmények:
+
+  Egyszerű, minimalista Material Design téma/design
+  Akadálymentes felület biztosítása
+  Különböző telefon méretek felbontásának támogatása
