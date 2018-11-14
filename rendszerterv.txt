@@ -30,3 +30,26 @@ Támogatott eszközök:
     
     - Android 4.4 (API 19) verziótól
     - Android 9.0 (API 28) verzióig
+
+Mérföldkövek
+    0.Bejelentlezés/Regisztráció:
+      -A játék megnyitásával megkapjuk a bejelentkezés panelt, egyéb esetben a sign up gombra kattintva
+       a regisztráció panelt.
+      -Bejelentkezés szügséges a játék elkezdéséhez.
+    1.Játéklogika, és grafika:
+      -A játékos kezdetben 3 élettel rendelkezik, majd ha rossz választ ad veszít az életéből,
+       ha ez háromszor megtörténik, akkor vége a játéknak.
+      -Játék bezárása és újrakezdése menü gomb lenyomásra. A játék tetszőleges megállítása szükség esetén.
+      -Minden kérdés megválaszolására kezdetben 30másodperc áll rendelelkezésre ami később csökkenni fog.
+      -Szintek választásával a kezdő idő kevesebb.
+    2.Pontozás:
+      - Az egyes kérdések megválaszolása után nehézségi és játék szint szerint.
+      - Legelső nehézségi szinten és a játék első szintjén minden helyesen megválaszolt kérdésért 2pont jár.
+      - A következő szinten az első szint pontját(2)+a megmaradt életeddel egyenértékű pontot kapsz kérdésenként.
+    3.Játék beállítása:
+      -Lehetőség nehézségi szint választásra.
+      -Véletlenszerűen generált kérdések nehézségi szint szerint.
+    4.Ranglista:
+      -A játék végén a játékos által elért pont felkerül a ranglistára.
+      -A ranglistán három fül ahol a top3,top10,top100 legtöbb pontot elért játékost láthatjuk.
+      
