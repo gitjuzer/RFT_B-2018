@@ -52,4 +52,8 @@ Mérföldkövek
     4.Ranglista:
       -A játék végén a játékos által elért pont felkerül a ranglistára.
       -A ranglistán három fül ahol a top3,top10,top100 legtöbb pontot elért játékost láthatjuk.
-      
+     
+Hibakezelés és bugok javítása:
+    1.Az alkalmazáson belül egy-egy funkciónál keletkező hibák feljegyzése és javítása.
+    2.Minden nem odaillő input lekezelése, fő cél hogy az app ne crasheljen.
+    3.Grafikai elcsúszások nem megjelenő felületek és egyéb hibák tesztelése különböző eszközökön.
