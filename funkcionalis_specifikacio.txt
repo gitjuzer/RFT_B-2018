@@ -63,3 +63,9 @@ Felhasznált kész komponensek:
   - Free to play - Ingyen játszható, letölthető
   - DLC - Esetleges dlc-k vásárolhatók/ingyenesen letölthetők
   - copyright - a copyrightolt tartalom kihagyása/módosítása
+
+ Forgatókönyvek
+  - Új játék: Reseteljük a pontokat és az életeket
+  - Témaválasztás: kiválasztjuk egy adatbásisból hogy melyik témából adjon kérdéseket
+  - Kiválasztuk a nehézséget: A program kiválsztja a kérdéseket az adatbázis megfelelő témájából
+  - Játék: A játékos egyesével válaszol a kérdésekre, a program ellenőrzi, hogy helyes-e a válasz, és ha igen akkor a játékos kap pontokat, ha helytelen a válasz akkor veszít egy életet
