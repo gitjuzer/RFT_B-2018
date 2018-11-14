@@ -59,3 +59,7 @@ Felhasznált kész komponensek:
   - bug - hiba
   - platform - szoftverkörnyezet
 
+ Igényelt üzleti folyamatok modellje
+  - Free to play - Ingyen játszható, letölthető
+  - DLC - Esetleges dlc-k vásárolhatók/ingyenesen letölthetők
+  - copyright - a copyrightolt tartalom kihagyása/módosítása
