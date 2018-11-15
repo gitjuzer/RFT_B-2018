@@ -58,6 +58,11 @@ Felhasznált kész komponensek:
   - back - vissza
   - bug - hiba
   - platform - szoftverkörnyezet
+  
+ Jelenlegi üzleti folyamatok modellje:
+  - Magas nyomdai és nyomtatási költségek.
+  - Tanulási kedv csökkenése.
+  - A dolgozatok javítása hatására túlterhelt oktatók.
 
  Igényelt üzleti folyamatok modellje
   - Free to play - Ingyen játszható, letölthető
