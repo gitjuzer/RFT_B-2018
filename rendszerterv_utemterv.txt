@@ -1,0 +1,19 @@
+Funkció	Feladat	Prioritás	Becslés	Eltelt	Hátralévõ		Prioritás:	
+Funkcionális specifikáció		0	20	24	-4		Fontos	0
+Rendszerterv		1	16	0	16		Normál	1
+Android alkalmazás		1	60	0	60		Alacsony	2
+IOS alkalmazás		1	60	0	60		Másodlagos	3
+Web alkalmazás		1	60	0	60			
+Grafikai munka		2	72	0	72			
+Tartalom készítés		1	48	0	48			
+					0			
+Tartalék idõ		3	16	0	16			
+Tesztelés		1	40	0	40			
+Projektvezetés		2	30	0	30			
+								
+		Órák:	422	24	398			
+		Embernap:	17 nap 14 óra	01 nap 0 óra	16 nap 14 óra			
+								
+Napidíj:	25 000 Ft							
+								
+Árajánlat:	439 583 Ft							
