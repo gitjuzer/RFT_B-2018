@@ -29,7 +29,13 @@ Project neve: „Quiz játék”
     A felhasználó választhat egy előre megadott kategóriákból választhat vagy hozzáadhat újat,
     beállíthat nehézségi szintet is pl.közepes:20 kérdés.
     
-
+  Jelenlegi üzleti folyamatok modellje:
+    A jelenlegi világban a fiatalok egyre kevésbé hajlandóak a "klasszikus" módon tanulni, ezért a különböző oktatási intézmények  
+    alternatív módszereket keresnek. 
+    Jelenleg a diákok tankönyvekből tanulnak és papír alapon adnak számot tudásukról, amely a XXI. században elavultnak számít. Ez  
+    rengeteg nyomdai és nyomtatási költséget jelent. Az oktatóknak, pedig rengeeg időt elvesz az idejéből minden dolgozat kijavítása  
+    egyesével.
+  
   Igényelt üzleti folyamatok modellje:
   
      A megrendelővel egyeztetések és kölönböző ötletek felvázolása után az elképzelés a következő:
