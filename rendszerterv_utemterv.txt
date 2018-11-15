@@ -1,19 +1,19 @@
-FunkciÛ	Feladat	Priorit·s	BecslÈs	Eltelt	H·tralÈvı		Priorit·s:	
-Funkcion·lis specifik·ciÛ		0	20	24	-4		Fontos	0
-Rendszerterv		1	16	0	16		Norm·l	1
-Android alkalmaz·s		1	60	0	60		Alacsony	2
-IOS alkalmaz·s		1	60	0	60		M·sodlagos	3
-Web alkalmaz·s		1	60	0	60			
+Funkci√≥	Feladat	Priorit√°s	Becsl√©s	Eltelt	H√°tral√©v√µ		Priorit√°s:	
+Funkcion√°lis spec.	0	20	24	-4		Fontos	0
+Rendszerterv		1	16	0	16		Norm√°l	1
+Android alkalmaz√°s	1	60	0	60		Alacsony 2
+IOS alkalmaz√°s		1	60	0	60		M√°sodlagos 3
+Web alkalmaz√°s		1	60	0	60			
 Grafikai munka		2	72	0	72			
-Tartalom kÈszÌtÈs		1	48	0	48			
-					0			
-TartalÈk idı		3	16	0	16			
-TesztelÈs		1	40	0	40			
-ProjektvezetÈs		2	30	0	30			
+Tartalom k√©sz√≠t√©s	1	48	0	48			
+					
+Tartal√©k id√µ		3	16	0	16			
+Tesztel√©s		1	40	0	40			
+Projektvezet√©s		2	30	0	30			
 								
-		”r·k:	422	24	398			
-		Embernap:	17 nap 14 Ûra	01 nap 0 Ûra	16 nap 14 Ûra			
+			√ìr√°k:	422	24	398			
+	Embernap: 17 nap 14 √≥ra	01 nap 0 √≥ra	16 nap 14 √≥ra			
 								
-NapidÌj:	25 000 Ft							
+Napid√≠j:	25 000 Ft							
 								
-¡raj·nlat:	439 583 Ft							
+√Åraj√°nlat:	439 583 Ft							
