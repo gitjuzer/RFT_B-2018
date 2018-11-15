@@ -61,3 +61,6 @@ Hibakezelés és bugok javítása:
 Fizikai környezet
   -Java forráskódot használunk, és android-on fog futni
   -Nincs vásárolt komponens
+
+telepítési terv
+  -a fájl letöltése után automatikusan telepítődik a program
