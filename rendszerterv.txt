@@ -57,3 +57,7 @@ Hibakezelés és bugok javítása:
     1.Az alkalmazáson belül egy-egy funkciónál keletkező hibák feljegyzése és javítása.
     2.Minden nem odaillő input lekezelése, fő cél hogy az app ne crasheljen.
     3.Grafikai elcsúszások nem megjelenő felületek és egyéb hibák tesztelése különböző eszközökön.
+    
+Fizikai környezet
+  -Java forráskódot használunk, és android-on fog futni
+  -Nincs vásárolt komponens
