@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RFTProject</string>
+    <string name="youremail">Enter your email</string>
+    <string name="yourpassword">Enter your password</string>
+</resources>
