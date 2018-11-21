@@ -58,9 +58,32 @@ Hibakezelés és bugok javítása:
     2.Minden nem odaillő input lekezelése, fő cél hogy az app ne crasheljen.
     3.Grafikai elcsúszások nem megjelenő felületek és egyéb hibák tesztelése különböző eszközökön.
     
-Fizikai környezet
-  -Java forráskódot használunk, és android-on fog futni
-  -Nincs vásárolt komponens
+Fizikai környezet:
 
-telepítési terv
-  -a fájl letöltése után automatikusan telepítődik a program
+  - Java forráskódot használunk, és android-on fog futni
+  - Nincs vásárolt komponens
+
+Telepítési terv:
+
+  - A fájl letöltése után automatikusan telepítődik a program
+  
+Adatbázis terv:
+
+  - Achievement tábla:
+	  - id(key)
+	  - name
+	  - points
+	
+  - Achivement tábla:
+	  - user_id
+	  - achievement_id
+	
+  - History tábla:
+	  - id(key)
+	  - question
+	  - wrong1
+	  - wrong2
+	  - wrong3
+	  - correct
+
+
