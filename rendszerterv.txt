@@ -92,4 +92,8 @@ Adatbázis terv:
 	  - wrong3
 	  - correct
 
-
+ Karbantartási terv:
+  
+    Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
+    - Ellenőrizni kell, hogy a jövőben kiadott Android verziókkal kompatibilis-e az alkalmazás.
+    - Idő elteltével új kategóriákat kell hozzáadni a játékhoz, hogy fent tartsuk az érdeklődési szintet.
