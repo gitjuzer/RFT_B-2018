@@ -104,7 +104,11 @@ Adatbázis terv:
 	  - wrong3
 	  - correct
 
- Karbantartási terv:
+Rest-API dokumentáció elérési útvonala:
+
+	- Link: 
+
+Karbantartási terv:
   
     Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
     - Ellenőrizni kell, hogy a jövőben kiadott Android verziókkal kompatibilis-e az alkalmazás.
