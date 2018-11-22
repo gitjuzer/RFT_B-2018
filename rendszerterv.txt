@@ -74,7 +74,11 @@ Telepítési terv:
   - A fájl letöltése után automatikusan telepítődik a program
   
 Adatbázis terv:
-
+  - User tábla:
+  	   -id(key)
+	   -username
+	   -password
+	   -email
   - Achievement tábla:
 	  - id(key)
 	  - name
