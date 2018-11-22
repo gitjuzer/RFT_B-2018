@@ -106,7 +106,7 @@ Adatbázis terv:
 
 Rest-API dokumentáció elérési útvonala:
 
-	- Link: 
+	- Link: https://documenter.getpostman.com/view/5052599/RzfZNCns
 
 Karbantartási terv:
   
