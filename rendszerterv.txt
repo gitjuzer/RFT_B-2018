@@ -79,6 +79,13 @@ Adatbázis terv:
 	   -username
 	   -password
 	   -email
+	   
+  - Highscores tábla:
+  	   -id(key)
+	   -userid(user/id)
+	   -point
+	   -difficulty
+	   
   - Achievement tábla:
 	  - id(key)
 	  - name
