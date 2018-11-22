@@ -5,11 +5,13 @@ public class User {
         private int user_id;
         private String username;
         private String password;
+        private String email;
 
-        public void User(int user_id,String username,String password) {
+        public void User(int user_id,String username,String password,String email) {
             this.user_id=user_id;
             this.username = username;
             this.password = password;
+            this.email = email;
         }
 
         protected int getUser_id()
@@ -26,10 +28,20 @@ public class User {
         {
             return password;
         }
+        
+        protected String getEmail()
+        {
+            return email;
+        }
 
         protected void setUserid(int user_id)
         {
             this.user_id=user_id;
+        }
+        
+        protected void setEmail(String email)
+        {
+            this.email=email;
         }
 
         protected void setUsername(String username)
