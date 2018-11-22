@@ -95,9 +95,10 @@ Adatbázis terv:
 	  - user_id
 	  - achievement_id
 	
-  - History tábla:
+  - Question tábla:
 	  - id(key)
 	  - question
+	  - category
 	  - wrong1
 	  - wrong2
 	  - wrong3
