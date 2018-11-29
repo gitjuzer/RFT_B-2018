@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bggradient"
-    tools:context="com.example.milan.rftproject.LoginActivity">
+    tools:context="com.example.milan.rftproject.MainActivity">
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
@@ -77,7 +77,7 @@
         android:orientation="horizontal"/>
 
     <EditText
-        android:id="@+id/usernameltext"
+        android:id="@+id/usernametext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

@@ -2,6 +2,7 @@ package com.example.milan.rftproject;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.widget.Toast;
 
 public class Config {
     private SharedPreferences sharedPreferences;
@@ -21,7 +22,15 @@ public class Config {
     public boolean readLoginStatus(){
         return sharedPreferences.getBoolean(context.getString(R.string.pref_login_status),false);
     }
-    public String readName(){
+    public String readUsername(){
         return sharedPreferences.getString(context.getString(R.string.pref_user_name),"User");
+    }
+    public String writeUsername(String username){
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString(context.getString(R.string.pref_user_name),username);
+        editor.commit();
+    }
+    public  void diplayToast(String message){
+        Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
     }
 }
