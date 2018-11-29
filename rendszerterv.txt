@@ -74,7 +74,18 @@ Telepítési terv:
   - A fájl letöltése után automatikusan telepítődik a program
   
 Adatbázis terv:
-
+  - User tábla:
+  	   -id(key)
+	   -username
+	   -password
+	   -email
+	   
+  - Highscores tábla:
+  	   -id(key)
+	   -userid(user/id)
+	   -point
+	   -difficulty
+	   
   - Achievement tábla:
 	  - id(key)
 	  - name
@@ -84,15 +95,20 @@ Adatbázis terv:
 	  - user_id
 	  - achievement_id
 	
-  - History tábla:
+  - Question tábla:
 	  - id(key)
 	  - question
+	  - category
 	  - wrong1
 	  - wrong2
 	  - wrong3
 	  - correct
 
- Karbantartási terv:
+Rest-API dokumentáció elérési útvonala:
+
+	- Link: https://documenter.getpostman.com/view/5052599/RzfZNCns
+
+Karbantartási terv:
   
     Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
     - Ellenőrizni kell, hogy a jövőben kiadott Android verziókkal kompatibilis-e az alkalmazás.
