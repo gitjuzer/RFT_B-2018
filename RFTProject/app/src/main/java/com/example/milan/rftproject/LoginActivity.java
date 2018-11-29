@@ -1,5 +1,8 @@
 package com.example.milan.rftproject;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,8 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
-
+public class LoginActivity extends Activity {
     List<User> users=new ArrayList<User>();
     EditText usernametext,passwordtext;
     Button loginbutton,registerbutton;
@@ -23,15 +25,19 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginbutton=(Button) findViewById(R.id.loginbtn);
         registerbutton=(Button) findViewById(R.id.registerbtn);
         setContentView(R.layout.activity_login);
+
+        loginbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username=usernametext.getText()+"";
+                String password=passwordtext.getText()+"";
+
+
+            }
+        });
     }
 
-    @Override
-    public void onClick(View v){
-        if (v.getId()==R.id.loginbtn){
 
-        }else
-         if (v.getId()==R.id.registerbtn){
 
-         }
-    }
+
 }

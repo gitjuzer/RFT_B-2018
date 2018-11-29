@@ -1,21 +1,32 @@
 package com.example.milan.rftproject;
 
+import com.google.gson.annotations.SerializedName;
+
 public class User {
-
+        @SerializedName("response")
+        private String response;
         private int user_id;
+        @SerializedName("username")
         private String username;
-        private String password;
 
-        public void User(int user_id,String username,String password) {
+        private String password;
+        private String email;
+
+        public void User(int user_id,String username,String password,String email) {
             this.user_id=user_id;
             this.username = username;
             this.password = password;
+            this.email=email;
+        }
+
+        public String getResponse() {
+            return response;
         }
 
         protected int getUser_id()
-        {
-            return user_id;
-        }
+            {
+                return user_id;
+            }
 
         protected String getUsername()
         {
@@ -27,10 +38,17 @@ public class User {
             return password;
         }
 
+        protected String getEmail()
+    {
+        return email;
+    }
+
         protected void setUserid(int user_id)
         {
             this.user_id=user_id;
         }
+
+        protected void setEmail(String email){this.email=email;}
 
         protected void setUsername(String username)
         {

@@ -1,5 +1,20 @@
 <resources>
     <string name="app_name">RFTProject</string>
     <string name="youremail">Enter your email</string>
+    <string name="yourusername">Enter your username</string>
     <string name="yourpassword">Enter your password</string>
+    <string name="forgotemail">I forgot my email adress</string>
+    <string name="or">Or</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="pref_file">com.example.preference_file</string>
+    <string name="pref_login_status">com.example.preference_login_status</string>
+    <string name="pref_user_name">com.example.user_name</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
