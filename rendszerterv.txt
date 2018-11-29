@@ -113,3 +113,20 @@ Karbantartási terv:
     Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
     - Ellenőrizni kell, hogy a jövőben kiadott Android verziókkal kompatibilis-e az alkalmazás.
     - Idő elteltével új kategóriákat kell hozzáadni a játékhoz, hogy fent tartsuk az érdeklődési szintet.
+
+„KVÍZ Teszt” Tesztterv:
+
+A dokumentum célja, hogy a fejlesztett alkalmazás tesztelését ütemezzük a kritériumoknak megfelelően.
+
+1. Funkcionális teszt
+	•	A rendszer funkcióinak tesztelése, mely során kiderül, hogy az elvártnak megfelelően működik.
+2. Biztonsági teszt
+	•	A szoftver jogosultsági rendszerének tesztelése ellenőrzi, hogy a rendszer adataihoz csak az elvárt felhasználók   férnek-e hozzá.
+3. Terheléses teszt
+	•	A terheléses teszt célja a tervezett kapacitások, és esetleges kapacitás bővítések által okozott terhelés 	 vizsgálata.
+4. Telepítési és rendszer visszaállítási teszt
+	•	A rendszer telepítésének tesztelése a rendszerüzemeltetési leírás alapján.
+	•	Rendszer visszaállítása (program és adat) a rendszerüzemeltetési leírás alapján.
+5. GoLive teszt
+	•	A GoLive teszt egy próbaélesítés, melynek során az élesítéskor esetlegesen keletkező problémák ne befolyásolják a normál üzemi működést.
+
