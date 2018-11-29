@@ -1,7 +1,7 @@
 package com.example.milan.rftproject;
 
 public class Question {
-private int id;
+    private int id;
     private String question;
     private String category;
     private String difficulty;
@@ -20,7 +20,8 @@ private int id;
         this.wrong2 = wrong2;
         this.wrong3 = wrong3;
         this.correct = correct;
-    }  
+    }
+
     protected String getQuestion()
     {
         return question;
