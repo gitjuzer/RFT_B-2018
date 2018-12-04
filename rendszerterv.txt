@@ -153,3 +153,28 @@ Rendszerelemek :
 	getWrong3 - Harmadik rossz kérdés megadása
 	getCorrect - Helyes kérdés megadása
 	getCategory - Kategória megadása
+
+ LoginFragment.java:
+
+	Edittext username,password - Username és Password bevitelimező
+	Button loginbutton,registerbutton - Register és Login gomb
+	registerbutton.setOnClickListener - A registerbuttonra kattintva átirányít minket a regisztrációs fragmentre
+	performLogin - Elküldi a login requestet a szervernek és válasz alapján visszaad egy toastot
+
+ RegisterFragment.java:
+
+	EditText email,username,password - Regisztrációs beviteli mezők
+	Button registerbtn - Regisztárció elküldése
+	performRegister -  Elküldi a register requestet a szervernek és válasz alapján visszaad egy toastot
+
+ Ranklist.java:
+
+	getId - Player id megadása
+	getPoint - Player point megadása
+
+ MainActivity.java:
+
+	List<User> - Felhasználók listája 
+	Config config - Config.java inicializálása
+	ApiInterface apiInterface - Egy interface performlogin és performregister számára
+	onCreate - Megnézzük a felhasználó bevan-e már jelentkezve, ha igen akkor a MenuFragmentre irányit, ha nem akkor pedig a 	         Loginfragmentre
