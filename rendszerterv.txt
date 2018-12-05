@@ -113,3 +113,68 @@ Karbantartási terv:
     Az alkalmazás minimális karbantartást igényel, amely a következőkre bontható:
     - Ellenőrizni kell, hogy a jövőben kiadott Android verziókkal kompatibilis-e az alkalmazás.
     - Idő elteltével új kategóriákat kell hozzáadni a játékhoz, hogy fent tartsuk az érdeklődési szintet.
+
+„KVÍZ Teszt” Tesztterv:
+
+A dokumentum célja, hogy a fejlesztett alkalmazás tesztelését ütemezzük a kritériumoknak megfelelően.
+
+1. Funkcionális teszt
+	•	A rendszer funkcióinak tesztelése, mely során kiderül, hogy az elvártnak megfelelően működik.
+2. Biztonsági teszt
+	•	A szoftver jogosultsági rendszerének tesztelése ellenőrzi, hogy a rendszer adataihoz csak az elvárt felhasználók   férnek-e hozzá.
+3. Terheléses teszt
+	•	A terheléses teszt célja a tervezett kapacitások, és esetleges kapacitás bővítések által okozott terhelés 	 vizsgálata.
+4. Telepítési és rendszer visszaállítási teszt
+	•	A rendszer telepítésének tesztelése a rendszerüzemeltetési leírás alapján.
+	•	Rendszer visszaállítása (program és adat) a rendszerüzemeltetési leírás alapján.
+5. GoLive teszt
+	•	A GoLive teszt egy próbaélesítés, melynek során az élesítéskor esetlegesen keletkező problémák ne befolyásolják a normál üzemi működést.
+
+Rendszerelemek :
+
+  User.java:
+
+	getResponse - Kapott válasz megadása
+	getUser_id() - Felhasználó azonosítójának megadása
+	getUsername() - Felhasználó név megadása
+	getPassword() - Felhasználó jelszavávan megadása
+	getEmail() - Felhasználó Emailcímének megadása 
+	setUserid(int user_id) - Felhasználó azonosítójának beállítása 	
+	setEmail(String email) - Felhasználó Email cím beállítása 
+	setUsername(String username) - Felhasználó név beállítása 
+	setPassword() - Felhasználó jelszó beállítása 
+
+  Question.java:
+
+	getQuestion() - Kérdés megadása
+	getDifficulty - Nehézség megadása
+	getWrong1 - Első rossz kérdés megadása
+	getWrong2 - Második rossz kérdés megadása
+	getWrong3 - Harmadik rossz kérdés megadása
+	getCorrect - Helyes kérdés megadása
+	getCategory - Kategória megadása
+
+ LoginFragment.java:
+
+	Edittext username,password - Username és Password bevitelimező
+	Button loginbutton,registerbutton - Register és Login gomb
+	registerbutton.setOnClickListener - A registerbuttonra kattintva átirányít minket a regisztrációs fragmentre
+	performLogin - Elküldi a login requestet a szervernek és válasz alapján visszaad egy toastot
+
+ RegisterFragment.java:
+
+	EditText email,username,password - Regisztrációs beviteli mezők
+	Button registerbtn - Regisztárció elküldése
+	performRegister -  Elküldi a register requestet a szervernek és válasz alapján visszaad egy toastot
+
+ Ranklist.java:
+
+	getId - Player id megadása
+	getPoint - Player point megadása
+
+ MainActivity.java:
+
+	List<User> - Felhasználók listája 
+	Config config - Config.java inicializálása
+	ApiInterface apiInterface - Egy interface performlogin és performregister számára
+	onCreate - Megnézzük a felhasználó bevan-e már jelentkezve, ha igen akkor a MenuFragmentre irányit, ha nem akkor pedig a 	         Loginfragmentre
