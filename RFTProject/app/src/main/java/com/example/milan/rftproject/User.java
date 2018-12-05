@@ -8,7 +8,7 @@ public class User {
         private int user_id;
         @SerializedName("username")
         private String username;
-
+        @SerializedName("username")
         private String password;
         private String email;
 
