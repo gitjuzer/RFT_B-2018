@@ -1,1 +1,4 @@
+Használati Útmutató:
 
+Telepítés:
+	- A játék telepítés nélkül futtatható a RFTProject futtatásával.
