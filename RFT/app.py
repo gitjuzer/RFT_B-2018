@@ -33,7 +33,10 @@ def check_auth(username, password):
     result = connection.execute("select * from user where username=? and password=?",
                                 (username, password)).fetchall()
     connection.close()
-    return len(result) == 1
+    if len(result) == 1:
+        return jsonify(result="Success"), 200
+    else:
+        return jsonify(result="Failed!"), 200
 
 
 @app.route('/')
@@ -58,7 +61,9 @@ def register():
 
 @app.route('/login')
 def login():
-    return jsonify(result="Mukodik")
+    username = request.args.get('username')
+    password = request.args.get('password')
+    return check_auth(username, password)
 
 
 @app.route('/newHighScore')
