@@ -6,3 +6,9 @@ Telepítés:
 Fő menü:
 	- New game: új játék indítására van lehetőség, az első pályától indulva.
 	- Select level: új játékot indíthatunk a kiválasztott pályával kezdve, vagy véletlenszerű pályát is betölthetünk.
+	- Description: A játék rövid leírását találjuk meg itt, az alapértelmezett irányítási gombokkal.
+	- Exit: Kilépés a játékból.
+
+
+New Game:
+	- A játék kezdetekor 3 élettel rendelkezünk és minden helytelen válasz után vesztünk egy életet.
