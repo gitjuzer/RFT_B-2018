@@ -2,3 +2,7 @@ Használati Útmutató:
 
 Telepítés:
 	- A játék telepítés nélkül futtatható a RFTProject futtatásával.
+
+Fő menü:
+	- New game: új játék indítására van lehetőség, az első pályától indulva.
+	- Select level: új játékot indíthatunk a kiválasztott pályával kezdve, vagy véletlenszerű pályát is betölthetünk.
