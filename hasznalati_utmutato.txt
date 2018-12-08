@@ -12,3 +12,9 @@ Fő menü:
 
 New Game:
 	- A játék kezdetekor 3 élettel rendelkezünk és minden helytelen válasz után vesztünk egy életet.
+	- A számunkra megfelelő szint kiválasztása után a "New Game" gombra kattintva átirányít minket az első szintre ahol minden helyes 	    válasz után az életünk*a kiválasztott szint alap pontja:
+ 		- Easy(2pont)
+		- Medium(3pont)
+		- Hard(4pont)
+		
+A játék akkor ér véget ha végeztünk a 10 kérdéssel, vagy elveszítjük a 3 életünket.
