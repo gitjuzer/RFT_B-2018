@@ -94,6 +94,20 @@ def get_scores():
     return jsonify([dict(column_name) for column_name in data]), 200
 
 
+@app.route('/getPersonalHighScore')
+@requires_authentication
+def get_personal_scores():
+    username = request.args.get('username')
+    connection = sqlite3.connect(DATABASE)
+    connection.row_factory = sqlite3.Row
+    data = connection.execute(
+        "SELECT User.username, point, difficulty FROM Highscore inner join User on User.id == Highscore.user_id "
+        "where User.username = ? order by difficulty desc, point desc",
+        [username]).fetchall()
+    connection.close()
+    return jsonify([dict(column_name) for column_name in data]), 200
+
+
 @app.route('/getTenRandomQuestion')
 @requires_authentication
 def get_ten_random_question():
