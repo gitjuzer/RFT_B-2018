@@ -1,0 +1,20 @@
+Használati Útmutató:
+
+Telepítés:
+	- A játék telepítés nélkül futtatható a RFTProject futtatásával.
+
+Fő menü:
+	- New game: új játék indítására van lehetőség, az első pályától indulva.
+	- Select level: új játékot indíthatunk a kiválasztott pályával kezdve, vagy véletlenszerű pályát is betölthetünk.
+	- Description: A játék rövid leírását találjuk meg itt, az alapértelmezett irányítási gombokkal.
+	- Exit: Kilépés a játékból.
+
+
+New Game:
+	- A játék kezdetekor 3 élettel rendelkezünk és minden helytelen válasz után vesztünk egy életet.
+	- A számunkra megfelelő szint kiválasztása után a "New Game" gombra kattintva átirányít minket az első szintre ahol minden helyes 	    válasz után az életünk*a kiválasztott szint alap pontja:
+ 		- Easy(2pont)
+		- Medium(3pont)
+		- Hard(4pont)
+		
+A játék akkor ér véget ha végeztünk a 10 kérdéssel, vagy elveszítjük a 3 életünket.
