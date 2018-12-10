@@ -1,14 +1,9 @@
 package com.example.milan.rftproject;
 
-import com.google.gson.annotations.SerializedName;
-
 public class User {
-        @SerializedName("response")
         private String response;
         private int user_id;
-        @SerializedName("username")
         private String username;
-        @SerializedName("username")
         private String password;
         private String email;
 

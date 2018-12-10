@@ -1,19 +1,17 @@
 package com.example.milan.rftproject;
 
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
 public class ApiClient {
-    public static final String URL="srv21.firstheberg.net:5000/";
-    public static Retrofit retrofit=null;
+    public static final OkHttpClient client = new OkHttpClient();
 
-    public static Retrofit getApiClient(){
-        if(retrofit==null){
-            retrofit=new Retrofit.Builder()
-                    .baseUrl(URL)
-                    .addConverterFactory(GsonConverterFactory.create())
-                    .build();
-        }
-        return retrofit;
+    public static final String loginurl = "http://srv21.firstheberg.net:5000/login" ;
+
+    public static final String registerurl = "http://srv21.firstheberg.net:5000/register" ;
+
+    public static Request postloginrequest = new Request.Builder()
+            .url(loginurl)
+            .build();
+
+
     }
-}

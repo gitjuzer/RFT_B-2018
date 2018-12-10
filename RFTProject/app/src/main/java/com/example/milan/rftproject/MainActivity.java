@@ -1,8 +1,11 @@
 package com.example.milan.rftproject;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View;
@@ -12,41 +15,29 @@ import android.support.v4.app.Fragment;
 import android.app.FragmentTransaction;
 
 
-public class MainActivity extends Activity implements LoginFragment.OnLoginFormActivityListener {
+public class MainActivity extends AppCompatActivity {
     List<User> users=new ArrayList<User>();
-    public static Config config;
-    public static ApiInterface apiInterface;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
-
+        //config=new Config(this);
+       // apiInterface=ApiClient.getApiClient().create(ApiInterface.class);
         setContentView(R.layout.activity_main);
-        config=new Config(this);
-        apiInterface=ApiClient.getApiClient().create(ApiInterface.class);
+
 
         if (findViewById(R.id.fragment_container)!=null){
             if (savedInstanceState!=null){
                 return;
             }
-            if(config.readLoginStatus()){
-                getFragmentManager().beginTransaction().add(R.id.fragment_container, new MenuFragment()).commit();
+            if(SharedUtils.getUsername(this)!=null){
+                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+                intent.putExtra("username", SharedUtils.getUsername(this));
+                startActivity(intent);
             }else{
-                getFragmentManager().beginTransaction().add(R.id.fragment_container, new LoginFragment()).commit();
+                getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new LoginFragment()).commit();
             }
         }
-    }
-
-
-    @Override
-    public void performRegister() {
-        getFragmentManager().beginTransaction().replace(R.id.fragment_container,new RegisterFragment()).addToBackStack(null).commit();
-
-    }
-
-    @Override
-    public void performLogin(String username) {
-        config.writeUsername(username);
-        getFragmentManager().beginTransaction().replace(R.id.fragment_container,new MenuFragment()).commit();
     }
 }

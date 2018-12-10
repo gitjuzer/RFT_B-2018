@@ -1,20 +1,24 @@
 package com.example.milan.rftproject;
 
 public class Ranklist {
-    private int id;
+    private String username;
     private int point;
+    private String difficulty;
 
-    public void Ranklist(int id,int point){
-        this.id=id;
+    public Ranklist(String username,int point,String difficulty){
+        this.username=username;
         this.point=point;
+        this.difficulty=difficulty;
     }
 
-    protected int getId()
+    protected String getUsername()
     {
-        return id;
+        return username;
     }
 
     protected  int getPoint(){
         return point;
     }
+
+    protected String getDifficulty(){return difficulty;}
 }
