@@ -19,8 +19,9 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textAlignment="center"
+        android:gravity = "center_horizontal"
         android:layout_marginTop="-3dp"
-        android:layout_marginLeft="27dp"
+        android:layout_marginLeft="25dp"
         android:layout_weight="1"/>
 
 </LinearLayout>

@@ -88,9 +88,7 @@ public class LoginFragment extends Fragment{
 
     private void doLogin(final String username,final String password) {
         String loginurl="http://srv21.firstheberg.net:5000/login?username="+username+"&password="+password;
-        //String loginurl="http://srv21.firstheberg.net:5000/login?username=test_user&password=test_password";
         OkHttpClient client = new OkHttpClient();
-        //Toast.makeText(view.getContext(),"Login Success",Toast.LENGTH_SHORT).show();
         Request request = new Request.Builder()
                 .url(loginurl)
                 .build();
@@ -115,7 +113,7 @@ public class LoginFragment extends Fragment{
                                 intent.putExtra("username", username);
                                 startActivity(intent);
                             }else{
-                                Toast.makeText(getActivity(),"Login Failed",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getActivity(),"Login Failed!",Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

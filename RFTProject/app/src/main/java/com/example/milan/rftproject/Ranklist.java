@@ -11,14 +11,14 @@ public class Ranklist {
         this.difficulty=difficulty;
     }
 
-    protected String getUsername()
+    public String getUsername()
     {
         return username;
     }
 
-    protected  int getPoint(){
+    public  int getPoint(){
         return point;
     }
 
-    protected String getDifficulty(){return difficulty;}
+    public String getDifficulty(){return difficulty;}
 }

@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bggradient"
+    android:orientation="vertical"
     tools:context=".PersonalHsFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="fantasy"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:text="@string/personalhigscores"
+        android:paddingTop="30dp"/>
+    <LinearLayout
+        android:id="@+id/charlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
 
-</FrameLayout>
+        <TableLayout
+            android:id="@+id/tabl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:shrinkColumns="1"
+            android:divider="?android:attr/dividerHorizontal"
+            android:layout_gravity="center"
+            android:showDividers="middle">
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
