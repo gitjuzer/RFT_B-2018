@@ -22,6 +22,12 @@
     <string name="newemailconfirm">Confirm new email</string>
     <string name="changeemail">Change email</string>
     <string name="changepassword">Change password</string>
+    <string name="quizgame">Quiz game</string>
+    <string name="startgame">Start</string>
+    <string name="next">Next</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

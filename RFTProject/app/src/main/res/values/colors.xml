@@ -7,4 +7,6 @@
     <color name="buttoncolor">#007399</color>
     <color name="white">#FFFFFF</color>
     <color name="buttontextcolor">#f9f9ff</color>
+    <color name="gamebg">#ddf4ff</color>
+    <color name="black">#000000</color>
 </resources>
