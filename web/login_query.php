@@ -6,7 +6,7 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 		
-		$query = "SELECT COUNT(*) as count FROM `user` WHERE `username` = :username AND `password` = :password";
+		$query = "SELECT COUNT(*) as count FROM `User` WHERE `username` = :username AND `password` = :password";
 		$stmt = $conn->prepare($query);
 		$stmt->bindParam(':username', $username);
 		$stmt->bindParam(':password', $password);
