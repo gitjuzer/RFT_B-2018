@@ -7,7 +7,7 @@
 		$password = $_POST['password'];
                 $email = $_POST['email'];
 		
-		$query = "INSERT INTO `member` (username, password, email) VALUES(:username, :password, :email)";
+		$query = "INSERT INTO `User` (username, password, email) VALUES(:username, :password, :email)";
 		$stmt = $conn->prepare($query);
 		$stmt->bindParam(':username', $username);
 		$stmt->bindParam(':password', $password);
