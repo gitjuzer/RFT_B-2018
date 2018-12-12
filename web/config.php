@@ -1,6 +1,6 @@
 <?php
 //SQLite Kapcsolat letrehozása
-	$conn = new PDO('sqlite:db/db_member.sqlite3');
+	$conn = new PDO('sqlite:db/db.sqlite3');
 	
 	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	/*
