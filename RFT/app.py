@@ -66,6 +66,17 @@ def login():
     return check_auth(username, password)
 
 
+@app.route('/getEmailAddress')
+@requires_authentication
+def get_email_address():
+    username = request.args.get('username')
+    connection = sqlite3.connect(DATABASE)
+    connection.row_factory = sqlite3.Row
+    result = connection.execute("select email from User where username == ?", [username]).fetchall()
+    connection.close()
+    return jsonify([dict(column_name) for column_name in result]), 200
+
+
 @app.route('/newHighScore')
 @requires_authentication
 def new_score():
