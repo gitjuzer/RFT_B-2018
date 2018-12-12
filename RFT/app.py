@@ -77,20 +77,22 @@ def get_email_address():
     return jsonify([dict(column_name) for column_name in result]), 200
 
 
-@app.route('/newHighScore')
+@app.route('/newHighScore', methods=['POST'])
 @requires_authentication
 def new_score():
-    uid = request.args.get('uid')
+    username = request.args.get('username')
     difficulty = request.args.get('difficulty')
     point = request.args.get('point')
     if point is None or point is None or point is None:
         return jsonify(result="Missing parameters!")
     else:
         connection = sqlite3.connect(DATABASE)
-        connection.execute("insert into Highscore values(?, ?, ?, ?)", (random.getrandbits(8), uid, difficulty, point))
+        uid = str(connection.execute("select id from User where username == ?", [username]).fetchone()[0])
+        connection.execute("insert into Highscore values(?, ?, ?, ?)",
+                           (random.getrandbits(8), uid, point, difficulty))
         connection.commit()
         connection.close()
-        return jsonify(result="New User has been added to the database!"), 200
+        return jsonify(result="New HighScore has been added to the database!"), 200
 
 
 @app.route('/getHighScores')
