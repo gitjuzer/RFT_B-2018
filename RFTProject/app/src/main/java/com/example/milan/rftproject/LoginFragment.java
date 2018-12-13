@@ -96,7 +96,7 @@ public class LoginFragment extends Fragment{
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                e.printStackTrace();
+                Toast.makeText(getContext(),"Server unavaible",Toast.LENGTH_LONG);
             }
 
             @Override

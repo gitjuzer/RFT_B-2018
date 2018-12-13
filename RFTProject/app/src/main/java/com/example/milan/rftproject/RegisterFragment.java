@@ -62,26 +62,30 @@ public class RegisterFragment extends Fragment {
                 .build();
 
         try {
-            Response response =  client.newCall(request).execute();
+            final Response response =  client.newCall(request).execute();
             final String respMsg = response.body().string();
-            final int respcode=response.code();
-            getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    if (respMsg.contains("missing")){
-                        Toast.makeText(getActivity(),"Missing parameters!",Toast.LENGTH_SHORT).show();
-                    }
-                    else if(respcode==500){
-                        Toast.makeText(getActivity(),"User already registered! ",Toast.LENGTH_SHORT).show();
-                    }
-                    else{
-                            Toast.makeText(getActivity(),"Successfully registered! ",Toast.LENGTH_SHORT).show();
+            if(response.isRedirect()){
+                Toast.makeText(getContext(),"Server unavaible",Toast.LENGTH_LONG);
+            }else {
+                final int respcode = response.code();
+                getActivity().runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (respMsg.contains("missing")) {
+                            Toast.makeText(getActivity(), "Missing parameters!", Toast.LENGTH_SHORT).show();
+                        } else if (respcode == 500) {
+                            Toast.makeText(getActivity(), "User already registered! ", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getActivity(), "Successfully registered! ", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(getActivity(), MainActivity.class);
                             startActivity(intent);
+                            SharedUtils.saveEmail(email,getContext());
                         }
-                    //
-                }
-            });
+                        //
+
+                    }
+                });
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

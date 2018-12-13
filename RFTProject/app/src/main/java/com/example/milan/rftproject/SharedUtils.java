@@ -30,4 +30,15 @@ public class SharedUtils {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         return prefs.getString(SharedConstants.KEY_PASSWORD,null);
     }
+    public static String getEmail(Context context){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        return prefs.getString(SharedConstants.KEY_EMAIL,null);
+    }
+    public static boolean saveEmail(String email, Context context){
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor prefeditor = prefs.edit();
+        prefeditor.putString(SharedConstants.KEY_EMAIL,email);
+        prefeditor.apply();
+        return true;
+    }
 }

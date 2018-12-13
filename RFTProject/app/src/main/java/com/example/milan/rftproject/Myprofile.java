@@ -28,7 +28,7 @@ public class Myprofile extends Fragment {
         usernametext=(TextView) view.findViewById(R.id.myusername);
         emailtext=(TextView)view.findViewById(R.id.myemail);
         usernametext.setText(SharedUtils.getUsername(getContext()));
-        emailtext.setText("Basicemail");
+        emailtext.setText(SharedUtils.getEmail(getContext()));
         return view;
     }
 

@@ -78,52 +78,51 @@ public class Homefragment extends Fragment {
         question=(TextView) view.findViewById(R.id.question);
         answergroup=(RadioGroup) view.findViewById(R.id.answergroup);
         gamelayout.setVisibility(LinearLayout.GONE);
-
-        startbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(difficultygroup.getCheckedRadioButtonId() == -1){
-                    Toast.makeText(getContext(), "You must select level before start.", Toast.LENGTH_SHORT).show();
-                }else{
-                    int selectedId = difficultygroup.getCheckedRadioButtonId();
-                    selectedRadioButton = (RadioButton)view.findViewById(selectedId);
-                    startgame(selectedRadioButton.getText().toString());
-                    switch (selectedRadioButton.getText().toString()){
-                        case "Easy":difficultymultipler=2;break;
-                        case "Medium":difficultymultipler=3;break;
-                        case "Hard":difficultymultipler=4;break;
+            startbutton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(difficultygroup.getCheckedRadioButtonId() == -1){
+                        Toast.makeText(getContext(), "You must select level before start.", Toast.LENGTH_SHORT).show();
+                    }else{
+                        int selectedId = difficultygroup.getCheckedRadioButtonId();
+                        selectedRadioButton = (RadioButton)view.findViewById(selectedId);
+                        startgame(selectedRadioButton.getText().toString());
+                        switch (selectedRadioButton.getText().toString()){
+                            case "Easy":difficultymultipler=2;break;
+                            case "Medium":difficultymultipler=3;break;
+                            case "Hard":difficultymultipler=4;break;
+                        }
                     }
                 }
-            }
-        });
-        nextbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int selectedId = answergroup.getCheckedRadioButtonId();
-                selectedRadioButton2 = (RadioButton)view.findViewById(selectedId);
-                if (selectedRadioButton2.getText().toString().equals(questionList.get(level).getCorrect())){
-                }else{
-                    if (health==1){
-                        Toast.makeText(getContext(),"Game over",Toast.LENGTH_SHORT).show();
+            });
+            nextbutton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int selectedId = answergroup.getCheckedRadioButtonId();
+                    selectedRadioButton2 = (RadioButton)view.findViewById(selectedId);
+                    if (selectedRadioButton2.getText().toString().equals(questionList.get(level).getCorrect())){
+                    }else{
+                        if (health==1){
+                            Toast.makeText(getContext(),"Game over",Toast.LENGTH_SHORT).show();
+                            gamelayout.setVisibility(LinearLayout.GONE);
+                            startbutton.setEnabled(true);
+                        }
+                        health--;
+                    }
+                    point=point+(health*difficultymultipler);
+                    level++;
+                    int textlevel=level+1;
+                    if (level==10){
+                        Toast.makeText(getContext(),"The game has ended, you earned"+point+"points.",Toast.LENGTH_SHORT).show();
+                        sendhighscore(SharedUtils.getUsername(getContext()),selectedRadioButton.getText().toString(),point);
                         gamelayout.setVisibility(LinearLayout.GONE);
                         startbutton.setEnabled(true);
+                    }else{
+                        nextlevel(level,health,textlevel);
                     }
-                    health--;
-                }
-                point=point+(health*difficultymultipler);
-                level++;
-                int textlevel=level+1;
-                if (level==10){
-                    Toast.makeText(getContext(),"The game has ended, you earned"+point+"points.",Toast.LENGTH_SHORT).show();
-                    sendhighscore(SharedUtils.getUsername(getContext()),selectedRadioButton.getText().toString(),point);
-                    gamelayout.setVisibility(LinearLayout.GONE);
-                    startbutton.setEnabled(true);
-                }else{
-                    nextlevel(level,health,textlevel);
-                }
 
-            }
-        });
+                }
+            });
         getquestions();
         return view;
     }
@@ -171,6 +170,7 @@ public class Homefragment extends Fragment {
         answer4.setText(questionList.get(level).getCorrect());*/
     }
     public void getquestions(){
+        boolean resp=true;
         String url="http://srv21.firstheberg.net:5000/getTenRandomQuestion";
         OkHttpClient client = new OkHttpClient();
         String cred=Credentials.basic(SharedUtils.getUsername(getContext()),SharedUtils.getPassword(getContext()));
@@ -181,7 +181,7 @@ public class Homefragment extends Fragment {
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-
+                Toast.makeText(getContext(),"Server unavaible",Toast.LENGTH_LONG);
             }
 
             @Override
@@ -202,7 +202,6 @@ public class Homefragment extends Fragment {
                         Question question1 = new Question(category, correct, question,answer1,answer2,answer3);
                         questionList.add(question1);
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }

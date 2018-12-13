@@ -61,6 +61,7 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
             case R.id.logout_id:
                 SharedUtils.saveUsername(null,this);
                 SharedUtils.savePassword(null,this);
+                SharedUtils.saveEmail(null,this);
                 Intent intent=new Intent(MenuActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
