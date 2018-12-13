@@ -1,6 +1,9 @@
 package com.example.milan.rftproject;
 
-public class Ranklist {
+import java.util.Collections;
+import java.util.Comparator;
+
+public class Ranklist implements Comparable<Ranklist>{
     private String username;
     private int point;
     private String difficulty;
@@ -20,5 +23,12 @@ public class Ranklist {
         return point;
     }
 
-    public String getDifficulty(){return difficulty;}
+    public String getDifficulty(){
+        return difficulty;
+    }
+
+    @Override
+    public int compareTo(Ranklist o) {
+        return o.getPoint() - getPoint();
+    }
 }

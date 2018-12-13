@@ -22,13 +22,18 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Credentials;
+import okhttp3.FormBody;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
 
 
@@ -44,12 +49,11 @@ public class Homefragment extends Fragment {
     LinearLayout gamelayout;
     Button startbutton,nextbutton;
     List<Question> questionList=new ArrayList<Question>();
-    List<Question> questionList1=new ArrayList<Question>();
     private int health=3;
     private int level=0;
     private int point=0;
     private int difficultymultipler=0;
-    private int userid;
+    Random rnd;
 
     public Homefragment() {
         // Required empty public constructor
@@ -111,7 +115,7 @@ public class Homefragment extends Fragment {
                 int textlevel=level+1;
                 if (level==10){
                     Toast.makeText(getContext(),"The game has ended, you earned"+point+"points.",Toast.LENGTH_SHORT).show();
-                    sendhighscore(userid,selectedRadioButton.getText().toString(),point);
+                    sendhighscore(SharedUtils.getUsername(getContext()),selectedRadioButton.getText().toString(),point);
                     gamelayout.setVisibility(LinearLayout.GONE);
                     startbutton.setEnabled(true);
                 }else{
@@ -134,10 +138,11 @@ public class Homefragment extends Fragment {
         gamelayout.setVisibility(LinearLayout.VISIBLE);
         startbutton.setEnabled(false);
         question.setText(questionList.get(level).getQuestion());
-        answer1.setText(questionList.get(level).getWrong1());
+        answer1.setText(questionList.get(level).getWrong3());
         answer2.setText(questionList.get(level).getWrong2());
-        answer3.setText(questionList.get(level).getWrong3());
-        answer4.setText(questionList.get(level).getCorrect());
+        answer3.setText(questionList.get(level).getCorrect());
+        answer4.setText(questionList.get(level).getWrong1());
+
     }
 
     public void nextlevel(int level,int health,int textlevel){
@@ -145,13 +150,25 @@ public class Homefragment extends Fragment {
             case 1:lifeimage.setImageResource(R.drawable.life1);break;
             case 2:lifeimage.setImageResource(R.drawable.life2);break;
             case 3:lifeimage.setImageResource(R.drawable.life3);break;
-        }        int levell=level+1;
+        }
         leveltext.setText(textlevel+"/10");
+        List<RadioButton> radioButtonList = new ArrayList<RadioButton>();
+        radioButtonList.add(answer1);
+        radioButtonList.add(answer2);
+        radioButtonList.add(answer3);
+        radioButtonList.add(answer4);
+        List<String> answers = questionList.get(level).getAnswers();
+        Collections.shuffle(answers);
+        for(int i = 0; i < 4; i++){
+            RadioButton thisButton = radioButtonList.get(i);
+            thisButton.setText(answers.get(i));
+        }
+
         question.setText(questionList.get(level).getQuestion());
-        answer1.setText(questionList.get(level).getWrong1());
+        /*answer1.setText(questionList.get(level).getWrong1());
         answer2.setText(questionList.get(level).getWrong2());
         answer3.setText(questionList.get(level).getWrong3());
-        answer4.setText(questionList.get(level).getCorrect());
+        answer4.setText(questionList.get(level).getCorrect());*/
     }
     public void getquestions(){
         String url="http://srv21.firstheberg.net:5000/getTenRandomQuestion";
@@ -193,26 +210,30 @@ public class Homefragment extends Fragment {
         });
     }
 
-    public void sendhighscore(int userid,String difficulty,int point){
-        String registerurl="http://srv21.firstheberg.net:5000/newHighScore?uid="+userid+"&difficulty="+difficulty+"&point="+point;
+    public void sendhighscore(String username,String difficulty,int point){
+        String sendhsurl="http://srv21.firstheberg.net:5000/newHighScore?username="+username+"&difficulty="+difficulty+"&point="+point;
+        String cred=Credentials.basic(SharedUtils.getUsername(getContext()),SharedUtils.getPassword(getContext()));
+        RequestBody requestBody = new FormBody.Builder()
+                .add("username", username)
+                .add("difficulty", difficulty)
+                .add("point", ""+point)
+                .build();
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url(registerurl)
+                .url(sendhsurl)
+                .header("Authorization",cred)
+                .post(requestBody)
                 .build();
 
         try {
             Response response =  client.newCall(request).execute();
             final String respMsg = response.body().string();
             final int respcode=response.code();
-            getActivity().runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    //
-                }
-            });
+            Log.d("ALMA","ALMA"+respMsg);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 }

@@ -1,5 +1,8 @@
 package com.example.milan.rftproject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Question {
     private String question;
     private String category;
@@ -43,8 +46,13 @@ public class Question {
         return correct;
     }
 
-    protected String getCategory()
-    {
-        return category;
+    protected List<String> getAnswers(){
+        List<String> answers = new ArrayList<String>();
+        answers.add(wrong1);
+        answers.add(wrong2);
+        answers.add(wrong3);
+        answers.add(correct);
+        return answers;
     }
+
 }

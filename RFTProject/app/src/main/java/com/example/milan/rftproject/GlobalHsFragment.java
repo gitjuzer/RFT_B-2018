@@ -3,6 +3,7 @@ package com.example.milan.rftproject;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.graphics.ColorSpace;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,8 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import okhttp3.Call;
@@ -81,6 +84,7 @@ public class GlobalHsFragment extends Fragment {
                         Ranklist rank = new Ranklist(username, point, difficulty);
                         ranklist.add(rank);
                     }
+                    Collections.sort(ranklist);
                     view.post(new Runnable() {
                         @Override
                         public void run() {
@@ -102,19 +106,17 @@ public class GlobalHsFragment extends Fragment {
             TextView usernametext=new TextView(getContext());
             TextView difficultytext=new TextView(getContext());
             TextView pointtext=new TextView(getContext());
-            int first= Color.rgb(255,216,61);
+            int first= Color.rgb(245,255,63);
             int second= Color.rgb(198,198,190);
             int third=Color.rgb(221,185,37);
             int top=5;
             int bottom=5;
-            int left;
-            int right;
+            int left=20;
+            int right=30;
             int textsize;
             switch (i){
                 case 0:
                     textsize=24;
-                    left=20;
-                    right=30;
                     ranknum.setTextColor(first);
                     usernametext.setTextColor(first);
                     difficultytext.setTextColor(first);
@@ -122,8 +124,6 @@ public class GlobalHsFragment extends Fragment {
                     break;
                 case 1:
                     textsize=20;
-                    left=25;
-                    right=35;
                     ranknum.setTextColor(second);
                     usernametext.setTextColor(second);
                     difficultytext.setTextColor(second);
@@ -131,8 +131,6 @@ public class GlobalHsFragment extends Fragment {
                     break;
                 case 2:
                     textsize=18;
-                    left=35;
-                    right=45;
                     ranknum.setTextColor(third);
                     usernametext.setTextColor(third);
                     difficultytext.setTextColor(third);
@@ -140,8 +138,6 @@ public class GlobalHsFragment extends Fragment {
                     break;
                 default:
                     textsize=16;
-                    left=20;
-                    right=30;
                     break;
             }
             TableRow tr=new TableRow(getContext());

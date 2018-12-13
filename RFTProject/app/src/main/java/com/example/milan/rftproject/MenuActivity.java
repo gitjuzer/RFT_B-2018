@@ -28,7 +28,8 @@ public class MenuActivity extends AppCompatActivity implements NavigationView.On
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_menu);
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                new Homefragment()).commit();
         drawerLayout =(DrawerLayout) findViewById(R.id.drawer);
         navigationView = (NavigationView) findViewById(R.id.menuview);
         navigationView.setNavigationItemSelectedListener(this);
