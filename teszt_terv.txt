@@ -23,6 +23,16 @@ Módszere:
 -Életek arányosan csökken
 -Start gomb lenyomására indul a játék
 
+3.2 Elfogadási teszt
+---------------------------------------
+Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkcionalitásának vizsgálata a felhasználók szemszögéből. 
+Módszere:
+-A gombok oda vezetnek ami rájuk van írva 
+-Az aktuális kérdés megválaszolása után átvisz a következő kérdésre a játék
+-Újrakezdésnél a játék a legelejétől kezdődik
+-Halál esetén újraindul a játék az elejétől
+-Helytelen válasz esetén életpont elveszítése
+
 3.2 Elfogadásiteszt                                                                                
 3.3 Tesztelési ütemterv, függőségek és tesztforgatókönyv    
 
