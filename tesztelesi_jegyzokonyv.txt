@@ -11,3 +11,12 @@ Bánka Milán;Az app elején;2018.12.14;A global highcore menüponton az összes
 Bánka Milán;Az app elején;2018.12.14;A logout menüpont minden alkalommal sikeresen kijelentkeztet minket;Teszt sikeres.;Nexus5S;
 Bánka Milán;Az app elején;2018.12.14;Alkalmazás bezárásakor ha be vagyunk jelentkezve egy accountra visszadob minket az accountunkba.;Teszt sikeres.;Nexus5S;
 Bánka Milán;Az app elején;2018.12.14;Ha ugyanolyan felhasználó nevet adunk meg mint ami már regisztrálva van figyelmeztet minket az app;Teszt sikeres.;Nexus5S;
+
+Tóth Kristóf;Az app elején;2018.12.14;A logout-ra kattintva visszakerülünk a bejelentkezési felületre;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Az app elején;2018.12.14;Ha bejelentkezve maradunk és bezárjuk az appot belépve maradunk.;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Az app elején;2018.12.14;Personal highcore opciónál csak a saját highscoret kapjuk meg;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Az app elején;2018.12.14;Global highcore opciónál minden user által elért highscoret láthatjuk;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Játék közben;2018.12.14;Next buttonra való kattintás után a kérdések-re való válasz mindig véletlenszerű sorrendben van;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Játék közben;2018.12.14;Ha elfogy a 3 életünk a játék véget ér.;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Játék végén;2018.12.14;Ha válaszoltunk a 10 kérdésre és nem fogyott el az életünk, a játék véget ér.;Teszt sikeres.;Huawei P20;
+Tóth Kristóf;Játék végén;2018.12.14;Ha a játék véget ér úgy hogy nem haltunk meg, a pontunk beleíródik a highscore táblába.;Teszt sikeres.;Huawei P20;
