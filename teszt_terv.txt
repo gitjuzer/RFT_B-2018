@@ -6,20 +6,18 @@ Tartalomjegyzék
 1.1 Tesztelési terv hatóköre, célja                                                                                        
 1.2 Elvárások
 
-2 Szükséges erőforrások                                                                                                                           
+2 Szükséges erőforrások                                                                                                          
 2.1 Feladatkörök és felelősségek      
 
 3 Tesztelési terv    
 3.1 Fejlesztői teszt
-3.2 Elfogadási teszt
-
-3.2 Elfogadásiteszt                                                                                
-3.3 Tesztelési ütemterv, függőségek és tesztforgatókönyv    
+3.2 Elfogadási teszt 
 
 4  Tesztelési jegyzőkönyv és tesztelési jelentés                                         
-4.1 Tesztelt elvárások                                                                                                                            
+4.1 Tesztelt elvárások                                                                                                                  
 4.2 Elfogadási kritériumok
 4.3 Tesztelési időintervallumok 
+
 ---------------------------
 Teszt terv
 ------------------------------
@@ -63,3 +61,28 @@ Módszere:
 -Újrakezdésnél a játék a legelejétől kezdődik
 -Halál esetén újraindul a játék az elejétől
 -Helytelen válasz esetén életpont elveszítése
+
+---------------------------------------
+4 Tesztelési jegyzőkönyv és tesztelési jelentés
+---------------------------------------
+
+4.1 Tesztelt elvárások
+--------------------------------------- 
+Az alábbi nem-funkcionális elvárások szerepelnek a követelmény specifikációban, amelyek tesztelésre is kerültek:
+-A menü gombok funkciószerű működése
+-A játék tetszőleges megállítása
+-Újrakezdési lehetőség
+
+
+4.2 Elfogadási kritériumok
+---------------------------------------
+A teszt sikerességének kritériumai:
+-Technikai, a teszt forgatókönyvben leírtak szerint
+-A projekt menedzser jóváhagyása a tesztek sikeres teljesítésére
+
+4.3 Tesztelési időintervallumok
+---------------------------------------
+Időtartam: 2 nap
+Teszt kezdete: 2018/12/14
+Teszt vége: 2018/12/15
+
