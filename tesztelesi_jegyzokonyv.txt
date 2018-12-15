@@ -21,6 +21,15 @@ Tóth Kristóf;Játék közben;2018.12.14;Ha elfogy a 3 életünk a játék vég
 Tóth Kristóf;Játék végén;2018.12.14;Ha válaszoltunk a 10 kérdésre és nem fogyott el az életünk, a játék véget ér.;Teszt sikeres.;Huawei P20;
 Tóth Kristóf;Játék végén;2018.12.14;Ha a játék véget ér úgy hogy nem haltunk meg, a pontunk beleíródik a highscore táblába.;Teszt sikeres.;Huawei P20;
 
+Tóth Richárd;Az app elején;2018.12.15;A bejelentkezési felületnél a gombok megfelelően működnek és jól láthatóak felbontástól függetlenül.;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Az app elején;2018.12.15;Login közben üres adat esetén egy Toast jön fel.;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék elején;2018.12.15;A home menüponton csak akkor indul a játék ha a megfelelő nehézség ki van választva.;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék elején;2018.12.15;A játék elindításakor a start button többszöri próbálkozásra is megfelelően működik.;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék elején;2018.12.15;A játék elindításakor az életünk alap helyzetben 3, többszöri próbálkozásra is.;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék közben;2018.12.15;Ha game over-t kapunk a játék bezárul;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék közben;2018.12.15;Rossz kérdés megválaszolása esetén vesztünk az életünkből;Teszt sikeres.;Galaxy S6;
+Tóth Richárd;Játék közben;2018.12.15;Next gombra kattintva mindig új kérdést kapunk új válaszokkal;Teszt sikeres.;Galaxy S6;
+
 REST-API - Tesztelési jegyzőkönyv és tesztelési jelentés XML formátumban
 ------------------------------------------------------------------------
 
