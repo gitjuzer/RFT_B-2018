@@ -60,3 +60,11 @@ class LocalServerTest(TestCase):
         data = json.loads(result.get_data(as_text=True))
         self.assertEqual(data['result'], 'You are not authorized!')
         self.assertEqual(result.status_code, 200)
+        
+    def test_high_scores(self):
+        valid_credentials = base64.b64encode(b'dummy_user:dummy_pass').decode('utf-8')
+        result = self.app.get('/getHighScores', headers={'Authorization': 'Basic ' + valid_credentials})
+        data = json.loads(result.get_data(as_text=True))
+        expected_result = {'username': 'dummy_user', 'difficulty': 'medium', 'point': 54}
+        self.assertIn(expected_result, data)
+        self.assertEqual(result.status_code, 200)
