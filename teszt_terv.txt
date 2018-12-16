@@ -37,6 +37,33 @@ Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
 -A QuizGame szervezeti egység / projektcsapat felelős a tesztadatok előállításáért. 
 -A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.
 
+---------------------------------------
+2 Szükséges erőforrások 
+---------------------------------------
+
+2.1 Feladatkörök és felelősségek 
+---------------------------------------
+Feladatkörök és felelősségek 
+Tesztelő:     
+ - A teszt végrehajtása
+ - Észrevételek dokumentálása,
+ - Teszt dokumentáció archiválása
+Szakértő: 
+ - Észrevételek elemzése 
+ - Megoldások javaslása
+Teszt-koordinátor: 
+ - Teszt terv készítése
+ - A tesztterv jóváhagyatása a projektmenedzserrel
+ - Teszt forgatókönyvek létrehozása
+ - Inkonzisztenciák kezelése
+ - Helyes és időbeni hibakezelés
+ - Szükség esetén problémák eszkalálása a projekt menedzsernek
+ - Végső riport készítése
+ - Teszt dokumentum archiválása
+ - Az észrevételek státuszának követése, ill. dokumentálása
+Projektvezető:   
+ - Teszt terv jóváhagyása
+ - Teszt forgatókönyv
 
 -------------------
 3. Tesztelési terv    
