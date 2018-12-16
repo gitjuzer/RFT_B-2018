@@ -76,3 +76,16 @@ class LocalServerTest(TestCase):
         expected_result = [{'username': 'dummy_user', 'difficulty': 'medium', 'point': 54}]
         self.assertEqual(expected_result, data)
         self.assertEqual(result.status_code, 200)
+        
+    def test_ten_random_questions(self):
+        valid_credentials = base64.b64encode(b'dummy_user:dummy_pass').decode('utf-8')
+        result = self.app.get('/getTenRandomQuestion', headers={'Authorization': 'Basic ' + valid_credentials})
+        data = json.loads(result.get_data(as_text=True))
+        expected_result = {'category': 'Music',
+                           'question': "What was Glenn Miller's signature tune?",
+                           'wrong_1': 'String of Pearls',
+                           'wrong_3': 'Chattanooga Choo Choo',
+                           'wrong_2': "The Miller's Tale",
+                           'correct': 'Moonlight Serenade'}
+        self.assertIn(expected_result, data)
+        self.assertEqual(result.status_code, 200)
