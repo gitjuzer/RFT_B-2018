@@ -68,3 +68,11 @@ class LocalServerTest(TestCase):
         expected_result = {'username': 'dummy_user', 'difficulty': 'medium', 'point': 54}
         self.assertIn(expected_result, data)
         self.assertEqual(result.status_code, 200)
+        
+    def test_personal_high_scores(self):
+        valid_credentials = base64.b64encode(b'dummy_user:dummy_pass').decode('utf-8')
+        result = self.app.get('/getPersonalHighScore?username=dummy_user', headers={'Authorization': 'Basic ' + valid_credentials})
+        data = json.loads(result.get_data(as_text=True))
+        expected_result = [{'username': 'dummy_user', 'difficulty': 'medium', 'point': 54}]
+        self.assertEqual(expected_result, data)
+        self.assertEqual(result.status_code, 200)
