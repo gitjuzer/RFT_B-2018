@@ -24,6 +24,8 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
+import static android.widget.Toast.LENGTH_SHORT;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -49,10 +51,34 @@ public class RegisterFragment extends Fragment {
         registerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            doRegister(email.getText().toString(),username.getText().toString(),password.getText().toString());
+                String emailtext = email.getText().toString();
+                String usernametext = username.getText().toString();
+                String passwordtext = password.getText().toString();
+                if(validateRegister(emailtext,usernametext,passwordtext)){
+                    doRegister(email.getText().toString(),username.getText().toString(),password.getText().toString());
+                }
             }
         });
         return view;
+    }
+
+    private boolean validateRegister(String email,String username, String password){
+        if(email==null || email.trim().length() ==0 ){
+            Toast.makeText(this.getContext(), "Email is  required", Toast.LENGTH_SHORT).show();
+            return false;
+        }else if(!email.contains("@")){
+            Toast.makeText(this.getContext(), "This is not email format!", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if(username == null || username.trim().length() == 0){
+            Toast.makeText(this.getContext(), "Username is required", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if(password == null || password.trim().length() == 0){
+            Toast.makeText(this.getContext(), "Password is required", LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
     }
     public void doRegister(final String email, final String username, final String password){
         String registerurl="http://srv21.firstheberg.net:5000/register?username="+username+"&password="+password+"&email="+email;
