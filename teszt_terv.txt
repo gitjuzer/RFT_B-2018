@@ -1,0 +1,115 @@
+QuizGame projekt
+
+Tartalomjegyzék
+---------------------------------------
+1 Bevezetés                                                                                                
+1.1 Tesztelési terv hatóköre, célja                                                                                        
+1.2 Elvárások
+
+2 Szükséges erőforrások                                                                                                          
+2.1 Feladatkörök és felelősségek      
+
+3 Tesztelési terv    
+3.1 Fejlesztői teszt
+3.2 Elfogadási teszt 
+
+4  Tesztelési jegyzőkönyv és tesztelési jelentés                                         
+4.1 Tesztelt elvárások                                                                                                                  
+4.2 Elfogadási kritériumok
+4.3 Tesztelési időintervallumok 
+
+---------------------------
+Teszt terv
+------------------------------
+
+---------------------------------------
+1. Bevezetés
+---------------------------------------
+
+1.1 Tesztelési terv hatóköre, célja
+---------------------------------------
+A tesztelési terv célja a tesztelés teljes körűségének biztosítása, a tesztelés során alkalmazott eljárások és megoldások meghatározásával.
+ 
+1.2 Elvárások
+---------------------------------------
+Az alábbi alap elvárások képezik ennek a teszttervnek az alapját:
+-Az olvasó ismeri az alap dokumentumokat, amelyek meghatározzák a rendszert.
+-A QuizGame szervezeti egység / projektcsapat felelős a tesztadatok előállításáért. 
+-A tesztprogram az ebben a dokumentumban meghatározott tesztterv alapján fut.
+
+---------------------------------------
+2 Szükséges erőforrások 
+---------------------------------------
+
+2.1 Feladatkörök és felelősségek 
+---------------------------------------
+Feladatkörök és felelősségek 
+Tesztelő:     
+ - A teszt végrehajtása
+ - Észrevételek dokumentálása,
+ - Teszt dokumentáció archiválása
+Szakértő: 
+ - Észrevételek elemzése 
+ - Megoldások javaslása
+Teszt-koordinátor: 
+ - Teszt terv készítése
+ - A tesztterv jóváhagyatása a projektmenedzserrel
+ - Teszt forgatókönyvek létrehozása
+ - Inkonzisztenciák kezelése
+ - Helyes és időbeni hibakezelés
+ - Szükség esetén problémák eszkalálása a projekt menedzsernek
+ - Végső riport készítése
+ - Teszt dokumentum archiválása
+ - Az észrevételek státuszának követése, ill. dokumentálása
+Projektvezető:   
+ - Teszt terv jóváhagyása
+ - Teszt forgatókönyv
+
+-------------------
+3. Tesztelési terv    
+-------------------
+
+3.1 Fejlesztői teszt
+---------------------------------------
+A fejlesztői tesztelés célja a rendszer alapvető funkcióinak ellenőrzése, a hibakezelés és az alapvető funkciók működésének vizsgálata. 
+Módszere:
+-A gombok megfelelő működése
+-Halál esetén újrakezdési lehetőség
+-Irányítás megfelelő működése
+-Életek arányosan csökken
+-Start gomb lenyomására indul a játék
+
+3.2 Elfogadási teszt
+---------------------------------------
+Az elfogadási teszt (angolul User Acceptance Test) célja a rendszer teljes funkcionalitásának vizsgálata a felhasználók szemszögéből. 
+Módszere:
+-A gombok oda vezetnek ami rájuk van írva 
+-Az aktuális kérdés megválaszolása után átvisz a következő kérdésre a játék
+-Újrakezdésnél a játék a legelejétől kezdődik
+-Halál esetén újraindul a játék az elejétől
+-Helytelen válasz esetén életpont elveszítése
+
+---------------------------------------
+4 Tesztelési jegyzőkönyv és tesztelési jelentés
+---------------------------------------
+
+4.1 Tesztelt elvárások
+--------------------------------------- 
+Az alábbi nem-funkcionális elvárások szerepelnek a követelmény specifikációban, amelyek tesztelésre is kerültek:
+-A menü gombok funkciószerű működése
+-A játék tetszőleges megállítása
+-Újrakezdési lehetőség
+
+
+4.2 Elfogadási kritériumok
+---------------------------------------
+A teszt sikerességének kritériumai:
+-Technikai, a teszt forgatókönyvben leírtak szerint
+-A projekt menedzser jóváhagyása a tesztek sikeres teljesítésére
+
+4.3 Tesztelési időintervallumok
+---------------------------------------
+Időtartam: 2 nap
+Teszt kezdete: 2018/12/14
+Teszt vége: 2018/12/15
+
